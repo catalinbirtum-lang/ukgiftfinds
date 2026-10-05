@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://catalinbirtum-lang.github.io/ukgiftfinds/sitemap.xml
