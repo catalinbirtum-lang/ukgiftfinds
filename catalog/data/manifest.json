@@ -1,6 +1,6 @@
 {
-"generated": "2026-10-07 18:30 BST",
-"total": 1002,
+"generated": "2026-10-07 18:44 BST",
+"total": 1023,
 "cats": [
 {
 "n": "Beauty",
@@ -48,6 +48,15 @@
 "page": "pets/"
 },
 {
+"n": "Home",
+"s": "home",
+"k": 65,
+"sh": [
+"home-0.json"
+],
+"page": "home/"
+},
+{
 "n": "Car",
 "s": "car",
 "k": 62,
@@ -75,13 +84,13 @@
 "page": "fitness/"
 },
 {
-"n": "Home",
-"s": "home",
-"k": 59,
+"n": "DIY",
+"s": "diy",
+"k": 47,
 "sh": [
-"home-0.json"
+"diy-0.json"
 ],
-"page": "home/"
+"page": "diy/"
 },
 {
 "n": "Outdoor",
@@ -95,7 +104,7 @@
 {
 "n": "Travel",
 "s": "travel",
-"k": 37,
+"k": 38,
 "sh": [
 "travel-0.json"
 ],
@@ -111,15 +120,6 @@
 "page": "tools/"
 },
 {
-"n": "DIY",
-"s": "diy",
-"k": 34,
-"sh": [
-"diy-0.json"
-],
-"page": "diy/"
-},
-{
 "n": "Office",
 "s": "office",
 "k": 33,
@@ -129,6 +129,15 @@
 "page": "office/"
 },
 {
+"n": "Garden",
+"s": "garden",
+"k": 29,
+"sh": [
+"garden-0.json"
+],
+"page": "garden/"
+},
+{
 "n": "Storage",
 "s": "storage",
 "k": 29,
@@ -136,15 +145,6 @@
 "storage-0.json"
 ],
 "page": "storage/"
-},
-{
-"n": "Garden",
-"s": "garden",
-"k": 28,
-"sh": [
-"garden-0.json"
-],
-"page": "garden/"
 },
 {
 "n": "Cleaning",
@@ -162,17 +162,17 @@
 "kitchen-0.json",
 "gaming-0.json",
 "pets-0.json",
+"home-0.json",
 "car-0.json",
 "tech-0.json",
 "fitness-0.json",
-"home-0.json",
+"diy-0.json",
 "outdoor-0.json",
 "travel-0.json",
 "tools-0.json",
-"diy-0.json",
 "office-0.json",
-"storage-0.json",
 "garden-0.json",
+"storage-0.json",
 "cleaning-0.json"
 ],
 "search": [
