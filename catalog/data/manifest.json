@@ -1,0 +1,161 @@
+{
+"generated": "2026-10-07 17:39 BST",
+"total": 620,
+"cats": [
+{
+"n": "Beauty",
+"s": "beauty",
+"k": 116,
+"sh": [
+"beauty-0.json"
+],
+"page": "beauty/"
+},
+{
+"n": "Toys/Kids",
+"s": "toys-kids",
+"k": 94,
+"sh": [
+"toys-kids-0.json"
+],
+"page": "toys-kids/"
+},
+{
+"n": "Gaming",
+"s": "gaming",
+"k": 58,
+"sh": [
+"gaming-0.json"
+],
+"page": "gaming/"
+},
+{
+"n": "Fitness",
+"s": "fitness",
+"k": 57,
+"sh": [
+"fitness-0.json"
+],
+"page": "fitness/"
+},
+{
+"n": "Car",
+"s": "car",
+"k": 54,
+"sh": [
+"car-0.json"
+],
+"page": "car/"
+},
+{
+"n": "Tech",
+"s": "tech",
+"k": 52,
+"sh": [
+"tech-0.json"
+],
+"page": "tech/"
+},
+{
+"n": "Pets",
+"s": "pets",
+"k": 47,
+"sh": [
+"pets-0.json"
+],
+"page": "pets/"
+},
+{
+"n": "Kitchen",
+"s": "kitchen",
+"k": 36,
+"sh": [
+"kitchen-0.json"
+],
+"page": "kitchen/"
+},
+{
+"n": "Outdoor",
+"s": "outdoor",
+"k": 35,
+"sh": [
+"outdoor-0.json"
+],
+"page": "outdoor/"
+},
+{
+"n": "Home",
+"s": "home",
+"k": 31,
+"sh": [
+"home-0.json"
+],
+"page": "home/"
+},
+{
+"n": "Travel",
+"s": "travel",
+"k": 29,
+"sh": [
+"travel-0.json"
+],
+"page": "travel/"
+},
+{
+"n": "DIY",
+"s": "diy",
+"k": 9,
+"sh": [
+"diy-0.json"
+],
+"page": "diy/"
+},
+{
+"n": "Garden",
+"s": "garden",
+"k": 1,
+"sh": [
+"garden-0.json"
+],
+"page": null
+},
+{
+"n": "Office",
+"s": "office",
+"k": 1,
+"sh": [
+"office-0.json"
+],
+"page": null
+}
+],
+"shards": [
+"beauty-0.json",
+"toys-kids-0.json",
+"gaming-0.json",
+"fitness-0.json",
+"car-0.json",
+"tech-0.json",
+"pets-0.json",
+"kitchen-0.json",
+"outdoor-0.json",
+"home-0.json",
+"travel-0.json",
+"diy-0.json",
+"garden-0.json",
+"office-0.json"
+],
+"search": [
+"search-0.json"
+],
+"idmap": "id-{X}.json (X = last character of the ASIN)",
+"tag": "ukgiftfinds-21",
+"event": "out-<ASIN>-catalog~<source>",
+"bands": [
+"under-10",
+"10-20",
+"20-50",
+"50-100",
+"100+"
+]
+}
