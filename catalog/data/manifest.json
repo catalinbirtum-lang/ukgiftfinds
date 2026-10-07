@@ -1,6 +1,6 @@
 {
-"generated": "2026-10-07 18:01 BST",
-"total": 897,
+"generated": "2026-10-07 18:05 BST",
+"total": 905,
 "cats": [
 {
 "n": "Beauty",
@@ -104,7 +104,7 @@
 {
 "n": "Storage",
 "s": "storage",
-"k": 23,
+"k": 25,
 "sh": [
 "storage-0.json"
 ],
@@ -113,7 +113,7 @@
 {
 "n": "DIY",
 "s": "diy",
-"k": 22,
+"k": 24,
 "sh": [
 "diy-0.json"
 ],
@@ -131,7 +131,7 @@
 {
 "n": "Cleaning",
 "s": "cleaning",
-"k": 12,
+"k": 15,
 "sh": [
 "cleaning-0.json"
 ],
@@ -149,7 +149,7 @@
 {
 "n": "Tools",
 "s": "tools",
-"k": 10,
+"k": 11,
 "sh": [
 "tools-0.json"
 ],
