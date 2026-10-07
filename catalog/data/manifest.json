@@ -1,6 +1,6 @@
 {
 "generated": "2026-10-07 18:17 BST",
-"total": 970,
+"total": 973,
 "cats": [
 {
 "n": "Beauty",
@@ -68,7 +68,7 @@
 {
 "n": "Fitness",
 "s": "fitness",
-"k": 60,
+"k": 62,
 "sh": [
 "fitness-0.json"
 ],
@@ -77,7 +77,7 @@
 {
 "n": "Home",
 "s": "home",
-"k": 57,
+"k": 58,
 "sh": [
 "home-0.json"
 ],
