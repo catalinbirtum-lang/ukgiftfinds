@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How much does it cost to run? Appliance electricity calculator (UK)</title>
+<meta name="description" content="Ad: rough UK running-cost calculator for fan heaters, heated throws, electric blankets and dehumidifiers, using the Ofgem average electricity unit rate. Affiliate product links below.">
+<link rel="canonical" href="https://catalinbirtum-lang.github.io/ukgiftfinds/running-costs/">
+<meta name="robots" content="index,follow">
+<meta property="og:site_name" content="Tidy Ledger UK guides">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How much does it cost to run? Appliance electricity calculator (UK)">
+<meta property="og:description" content="Ad: rough UK running-cost calculator for fan heaters, heated throws, electric blankets and dehumidifiers, using the Ofgem average electricity unit rate.">
+<meta property="og:url" content="https://catalinbirtum-lang.github.io/ukgiftfinds/running-costs/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0b3d91">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b3d91'/%3E%3Cpath d='M8 9h16v3H17v11h-3V12H8z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+.tool label{display:block;font-weight:600;margin:.8rem 0 .25rem}
+.tool input[type=number],.tool select{width:100%;max-width:18rem;font:inherit;padding:.45rem .55rem;border:1px solid var(--line);border-radius:6px}
+.tool .row{display:flex;flex-wrap:wrap;gap:.6rem 1.2rem;align-items:flex-end}
+.tool .field{flex:1 1 10rem;min-width:9rem}
+.results{display:grid;gap:.5rem;margin:1rem 0 0;padding:0;list-style:none}
+.results li{background:#fff;border:1px solid var(--line);border-radius:8px;padding:.55rem .8rem;display:flex;justify-content:space-between;gap:1rem}
+.results strong{font-variant-numeric:tabular-nums}
+.presets{display:flex;flex-wrap:wrap;gap:.45rem;margin:.4rem 0 .8rem;padding:0;list-style:none}
+.presets button{font:inherit;cursor:pointer;background:#fff;border:1px solid var(--line);border-radius:999px;padding:.35rem .75rem;min-height:40px}
+.presets button[aria-pressed=true]{border-color:var(--brand);background:#e8f0ff;font-weight:600}
+.prodlist{list-style:none;padding:0;margin:1rem 0}
+.prodlist li{border:1px solid var(--line);border-radius:10px;padding:.7rem 1rem;margin:.7rem 0}
+.prodlist .btn.amz{display:inline-block;margin-top:.4rem;min-height:44px}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="site"><div class="wrap">
+<p class="brand"><a href="../">Tidy Ledger UK guides</a></p>
+<nav aria-label="Main"><ul><li><a href="../">All guides</a></li><li><a href="../catalog/">Gift catalogue</a></li><li><a href="https://tidy-ledger-guides-uk.netlify.app/method/">Sources &amp; method</a></li><li><a href="../about/">About</a></li></ul></nav>
+</div></header>
+<main id="main" class="wrap">
+<article>
+<p class="meta"><a href="../">All guides</a> &rsaquo; Running costs &rsaquo; Ad</p>
+<div class="adbar" role="note" aria-label="Advertising disclosure"><p><strong>Ad.</strong> This page contains affiliate links to Amazon UK, each marked <span class="adtag">Ad</span>. <span class="amz-assoc">As an Amazon Associate I earn from qualifying purchases.</span> We have not tested these products.</p></div>
+<h1>How much does it cost to run?</h1>
+<p class="lede">A rough UK electricity running-cost calculator. Pick a preset or enter the wattage from your appliance&rsquo;s label, then see an estimate per hour, day and week.</p>
+<p class="note">This is an estimate only. Real cost depends on your tariff, heat setting, thermostat and how often the appliance cycles. We do not promise savings.</p>
+
+<section class="tool" data-tl-tool aria-labelledby="calc-h">
+<h2 id="calc-h">Running-cost calculator</h2>
+<p class="small">Default unit rate: <strong>26.32p/kWh</strong> &mdash; Ofgem average electricity price-cap unit rate for Direct Debit, 1 October to 31 December 2026. Your bill may differ by region and payment method. You can type your own rate below.</p>
+<ul class="presets" aria-label="Appliance presets">
+<li><button type="button" data-w="2000" data-h="4" data-label="Fan heater 2kW">Fan heater 2&nbsp;kW</button></li>
+<li><button type="button" data-w="100" data-h="4" data-label="Heated throw ~100W">Heated throw ~100&nbsp;W</button></li>
+<li><button type="button" data-w="150" data-h="4" data-label="Electric blanket ~150W">Electric blanket ~150&nbsp;W</button></li>
+<li><button type="button" data-w="200" data-h="8" data-label="Dehumidifier ~200W">Dehumidifier ~200&nbsp;W</button></li>
+<li><button type="button" data-w="300" data-h="6" data-label="Heated airer ~300W">Heated airer ~300&nbsp;W</button></li>
+<li><button type="button" data-w="" data-h="4" data-label="Custom">Enter my own</button></li>
+</ul>
+<div class="row">
+<div class="field"><label for="watts">Wattage (W)</label>
+<input id="watts" name="watts" type="number" min="1" max="10000" step="1" value="100" inputmode="numeric"></div>
+<div class="field"><label for="hours">Hours used per day</label>
+<input id="hours" name="hours" type="number" min="0" max="24" step="0.5" value="4" inputmode="decimal"></div>
+<div class="field"><label for="rate">Unit rate (p/kWh)</label>
+<input id="rate" name="rate" type="number" min="0.01" max="200" step="0.01" value="26.32" inputmode="decimal"></div>
+</div>
+<p id="preset-note" class="small" aria-live="polite">Preset: heated throw ~100&nbsp;W (Beurer HD&nbsp;75 datasheet lists 100&ndash;110&nbsp;W).</p>
+<ul class="results" data-tl-result aria-live="polite">
+<li><span>Cost per hour</span> <strong id="c-hour">&mdash;</strong></li>
+<li><span>Cost per day</span> <strong id="c-day">&mdash;</strong></li>
+<li><span>Cost per week</span> <strong id="c-week">&mdash;</strong></li>
+</ul>
+<p class="small">Formula: kWh = watts &divide; 1,000; cost = kWh &times; unit rate. Day and week use the hours you entered.</p>
+</section>
+
+<section aria-labelledby="src-h">
+<h2 id="src-h">Where the preset wattages come from</h2>
+<ul>
+<li><strong>Fan heater 2&nbsp;kW:</strong> Dimplex DXUC2BS upright ceramic heater, manufacturer listing: 2000&nbsp;W output (<a href="https://www.shopdimplex.com/products/upright-ceramic-heater-2kw-dxuc2bs" rel="noopener" target="_blank">shopdimplex.com</a>).</li>
+<li><strong>Heated throw ~100&nbsp;W:</strong> Beurer HD&nbsp;75 Cosy datasheet: 100&ndash;110&nbsp;W (<a href="https://res.cloudinary.com/beurer/image/upload/v1705114579/stibo-live/42106_HD75%2520Cosy%2520Dark%2520Grey_2022-07-07_01_DS-EN_BEU.pdf" rel="noopener" target="_blank">Beurer PDF</a>). We use 100&nbsp;W in the preset.</li>
+<li><strong>Electric blanket ~150&nbsp;W:</strong> Dreamland Cosy Up / Hygge Days warming throws listed at 150&nbsp;W (<a href="https://www.directvacuums.co.uk/dreamland-16996-electric-blanket-cosy-up-silky-soft-faux-fur-warming-throw-pink.html" rel="noopener" target="_blank">Direct Vacuums product specs</a>; also listed on Electrocity for Hygge Days).</li>
+<li><strong>Dehumidifier ~200&nbsp;W:</strong> Pro Breeze 12L models list energy consumption 0.2&nbsp;kWh (about 200&nbsp;W when running) on the manufacturer product page (<a href="https://probreeze.com/products/12l-dehumidifier-with-built-in-humidistat" rel="noopener" target="_blank">probreeze.com</a>).</li>
+<li><strong>Heated airer ~300&nbsp;W:</strong> typical Lakeland Dry:Soon 3-tier heated airer rating of 300&nbsp;W in the product manuals (e.g. model family manuals on manuals.plus). We do not have a heated airer in our catalogue yet &mdash; enter your own label wattage if different.</li>
+</ul>
+<p class="small">Unit rate source: <a href="https://www.ofgem.gov.uk/your-energy-supply/your-energy-bill/energy-price-cap-unit-rates-and-standing-charges" rel="noopener" target="_blank">Ofgem &mdash; Energy price cap unit rates and standing charges</a> (average electricity Direct Debit: 26.32 pence per kWh, 1 Oct&ndash;31 Dec 2026).</p>
+</section>
+
+<section aria-labelledby="prod-h">
+<h2 id="prod-h">Related products from our catalogue</h2>
+<p>These are items already in our gift catalogue. Check the wattage on the listing or the product label before you rely on a cost figure. No prices here &mdash; they change daily.</p>
+<ul class="prodlist">
+<li>
+<p><strong>Silentnight Luxury Super Cosy Heated Throw</strong> <span class="adtag">Ad</span><br>
+<span class="small">Home &middot; also on our <a href="../tiktok/#silentnight-heated-throw">TikTok picks</a></span></p>
+<a class="btn amz" href="https://www.amazon.co.uk/dp/B0FG3FZNJK?tag=ukgiftfinds-21" rel="sponsored nofollow noopener" target="_blank" data-tl-out="out-B0FG3FZNJK-runcost" data-tl-event="amazon_click_runcost_silentnight">See today&rsquo;s price on Amazon UK</a>
+</li>
+<li>
+<p><strong>Beurer HD75 heated throw</strong> <span class="adtag">Ad</span><br>
+<span class="small">Home &middot; preset wattage above is from the Beurer HD&nbsp;75 datasheet</span></p>
+<a class="btn amz" href="https://www.amazon.co.uk/dp/B0BLZKBLVH?tag=ukgiftfinds-21" rel="sponsored nofollow noopener" target="_blank" data-tl-out="out-B0BLZKBLVH-runcost" data-tl-event="amazon_click_runcost_beurer">See today&rsquo;s price on Amazon UK</a>
+</li>
+<li>
+<p><strong>Dreamland Hygge Days heated throw</strong> <span class="adtag">Ad</span><br>
+<span class="small">Home &middot; Dreamland warming throws in this range are listed at 150&nbsp;W</span></p>
+<a class="btn amz" href="https://www.amazon.co.uk/dp/B08KRRRPBF?tag=ukgiftfinds-21" rel="sponsored nofollow noopener" target="_blank" data-tl-out="out-B08KRRRPBF-runcost" data-tl-event="amazon_click_runcost_dreamland-hygge">See today&rsquo;s price on Amazon UK</a>
+</li>
+<li>
+<p><strong>Dreamland Cosy Up Electric Blanket</strong> <span class="adtag">Ad</span><br>
+<span class="small">Home &middot; Cosy Up silky soft faux-fur warming throw</span></p>
+<a class="btn amz" href="https://www.amazon.co.uk/dp/B0CJ9TW2K3?tag=ukgiftfinds-21" rel="sponsored nofollow noopener" target="_blank" data-tl-out="out-B0CJ9TW2K3-runcost" data-tl-event="amazon_click_runcost_dreamland-cosy">See today&rsquo;s price on Amazon UK</a>
+</li>
+<li>
+<p><strong>Pro Breeze 12L/Day Dehumidifier</strong> <span class="adtag">Ad</span><br>
+<span class="small">Home &middot; manufacturer lists ~0.2&nbsp;kWh energy consumption on 12L models</span></p>
+<a class="btn amz" href="https://www.amazon.co.uk/dp/B0F4DXSDGX?tag=ukgiftfinds-21" rel="sponsored nofollow noopener" target="_blank" data-tl-out="out-B0F4DXSDGX-runcost" data-tl-event="amazon_click_runcost_probreeze">See today&rsquo;s price on Amazon UK</a>
+</li>
+<li>
+<p><strong>Silentnight Comfort Control heated throw (Blush)</strong> <span class="adtag">Ad</span><br>
+<span class="small">Home &middot; enter the wattage from the label or listing for a closer estimate</span></p>
+<a class="btn amz" href="https://www.amazon.co.uk/dp/B0CKFJJ3J8?tag=ukgiftfinds-21" rel="sponsored nofollow noopener" target="_blank" data-tl-out="out-B0CKFJJ3J8-runcost" data-tl-event="amazon_click_runcost_silentnight-comfort">See today&rsquo;s price on Amazon UK</a>
+</li>
+</ul>
+</section>
+
+<nav class="related" aria-labelledby="rel-h"><h2 id="rel-h">More on this site</h2>
+<ul>
+<li><a href="../tiktok/">As seen on our TikTok</a> <span class="adtag">Ad</span></li>
+<li><a href="../catalog/home/">Home gift catalogue</a> <span class="adtag">Ad</span></li>
+<li><a href="../top20/">Today&rsquo;s top 20 UK gift finds</a> <span class="adtag">Ad</span></li>
+<li><a href="../">All picks and gift guides</a></li>
+</ul></nav>
+<p class="small">Facts checked 8 October 2026. Information only &mdash; not energy, tax or financial advice.</p>
+</article>
+</main>
+<footer class="site"><div class="wrap">
+<p>Tidy Ledger UK guides is an independent small UK publisher. Information only &ndash; not tax, legal or financial advice. No cookies. Our <a href="../gift-guides/">gift guides</a> and <a href="../picks/">product picks</a> contain Amazon affiliate links, labelled <strong>Ad</strong>; our other guides have no adverts or affiliate links. We count visits and clicks anonymously (GoatCounter, EU-hosted; no cookie, no IP address stored) &ndash; <a href="../about/#privacy">details and opt-out</a>. Facts checked 8 October 2026.</p>
+<p><a href="../about/">About us</a> &middot; <a href="https://tidy-ledger-guides-uk.netlify.app/method/">How we check facts</a> &middot; <a href="../sitemap.xml">Sitemap</a></p>
+</div></footer>
+<script id="tl-analytics">
+/* Tidy Ledger UK anonymous visit counter (GoatCounter, EU-hosted). No cookies; nothing is stored in the visitor's browser unless THEY press "Don't count my visits". No IP is stored by us or by GoatCounter.
+   INERT until TL_GC is replaced by the real GoatCounter code (the part before .goatcounter.com). Blocking the counter changes nothing else on the page.
+   Counts: page views/visits, referrers, utm_source/utm_campaign, and events: tool_start, tool_complete (once per page view), payhip_click, cta_click.
+   Own visits: open any page with ?tl_ignore=1 (undo ?tl_ignore=0); same switch as GoatCounter's own #toggle-goatcounter (localStorage key "skipgc"). */
+(function(){
+var TL_GC="tidyledgeruk",
+TL_HOSTS=",mtd-2027-checker-uk.netlify.app,gpsr-checker-uk.netlify.app,rd-precheck-uk.netlify.app,card-fee-calculator-uk.netlify.app,phone-line-switch-off-uk.netlify.app,mtd-which-software-uk.netlify.app,tidy-ledger-guides-uk.netlify.app,catalinbirtum-lang.github.io,",
+TL_SRC="https://gc.zgo.at/count.js";
+var d=document,w=window,q=[],ls=null,st=0,cp=0,site=location.hostname.replace(/\.netlify\.app$/,"");
+try{ls=w.localStorage}catch(e){}
+function off(){try{return !!(ls&&ls.getItem("skipgc")==="t")||navigator.doNotTrack==="1"}catch(e){return false}}
+try{var m=/[?&]tl_ignore=([01])(&|$)/.exec(location.search);if(m&&ls){if(m[1]==="1")ls.setItem("skipgc","t");else ls.removeItem("skipgc")}}catch(e){}
+function ready(){return !!(w.goatcounter&&w.goatcounter.count&&w.tlLoaded)}
+function T(kind,extra){try{if(off())return;var n=kind+"|"+site+(extra?"|"+extra:"");if(ready())w.goatcounter.count({path:n,title:n,event:true,no_session:true});else if(q.length<20)q.push(n)}catch(e){}}
+function flush(){var a=q.splice(0);for(var i=0;i<a.length;i++){try{w.goatcounter.count({path:a[i],title:a[i],event:true,no_session:true})}catch(e){}}}
+function utm(){var o=[],p=new URLSearchParams(location.search);["utm_source","utm_medium","utm_campaign"].forEach(function(k){var v=p.get(k);if(v)o.push(k+"="+encodeURIComponent(v.slice(0,60)))});return o.length?"?"+o.join("&"):""}
+function ref(){var p=new URLSearchParams(location.search).get("utm_source");if(p)return p.slice(0,60);try{var r=new URL(d.referrer);return r.origin===location.origin?"":r.origin+r.pathname}catch(e){return ""}}
+d.addEventListener("click",function(e){var t=e.target;if(!t||!t.closest)return;
+var o=t.closest("[data-tl-optout]");if(o){e.preventDefault();try{if(ls){if(ls.getItem("skipgc")==="t")ls.removeItem("skipgc");else ls.setItem("skipgc","t")}}catch(x){}opt();return}
+var a=t.closest("a[href]"),c=t.closest("[data-tl-cta]"),ev=t.closest("[data-tl-event]"),h=null;
+if(a){try{h=new URL(a.href,location.href)}catch(x){}}
+if(h&&/(^|\.)payhip\.com$/i.test(h.hostname)){T("payhip_click",h.pathname.slice(0,40));return}
+if(ev){T(String(ev.getAttribute("data-tl-event")).slice(0,40));return}
+if(c||(a&&/(^|\s)btn(\s|$)/.test(a.className))){var id=(c&&c.getAttribute("data-tl-cta"))||(h?(h.hostname===location.hostname?"":h.hostname)+h.pathname:"cta");T("cta_click",String(id).slice(0,40))}
+},true);
+d.addEventListener("keydown",function(e){var t=e.target;if((e.key==="Enter"||e.key===" ")&&t&&t.hasAttribute&&t.hasAttribute("data-tl-optout")){e.preventDefault();t.click()}},true);
+function S(){if(!st){st=1;T("tool_start")}}
+function C(r){if(!cp&&r.textContent.replace(/\s+/g,"")){cp=1;S();T("tool_complete")}}
+function init(){var tool=d.querySelector("[data-tl-tool]"),res=d.querySelector("[data-tl-result]");
+if(tool){tool.addEventListener("input",S,true);tool.addEventListener("change",S,true);tool.addEventListener("submit",S,true)}
+if(res){C(res);if(w.MutationObserver)new MutationObserver(function(){C(res)}).observe(res,{childList:true,subtree:true,characterData:true})}
+opt()}
+function opt(){var l=d.querySelectorAll("[data-tl-optout]"),x=false;try{x=!!(ls&&ls.getItem("skipgc")==="t")}catch(e){}for(var i=0;i<l.length;i++)l[i].textContent=x?"Counting is off in this browser - turn it back on":"Don't count my visits"}
+if(d.readyState==="loading")d.addEventListener("DOMContentLoaded",init);else init();
+if(/^[a-z0-9][a-z0-9-]{1,40}$/.test(TL_GC)&&TL_HOSTS.indexOf(","+location.hostname+",")>-1&&!off()){
+w.goatcounter={no_onload:true,no_events:true};
+var s=d.createElement("script");s.async=true;s.src=TL_SRC;s.setAttribute("data-goatcounter","https://"+TL_GC+".goatcounter.com/count");
+s.onload=function(){try{var g=w.goatcounter,og=g.get_data;
+g.get_data=function(v){var x=og(v);if(v&&v.event){x.r="";x.q=""}else{x.p=location.host+location.pathname;x.r=ref();x.t=d.title;x.q=utm()}return x};
+w.tlLoaded=1;g.count();flush()}catch(e){}};
+d.head.appendChild(s)}
+})();
+</script>
+<script id="tl-out-v1">
+/* Outbound affiliate-click counter (engine v1). On a click on an Amazon link it sends ONE anonymous GoatCounter event
+   "out-<product>-<page>~<source>". Source = utm_source of this page's URL or the kind of referrer (pin/tt/g/...); nothing is stored
+   in your browser. Off when Do Not Track is on, when "Don't count my visits" is set, or when the counter is not loaded. */
+(function(){var d=document,w=window;
+function off(){try{return navigator.doNotTrack==="1"||(w.localStorage&&w.localStorage.getItem("skipgc")==="t")}catch(e){return false}}
+function src(){try{var p=new URLSearchParams(location.search).get("utm_source");if(p)return p.toLowerCase().replace(/[^a-z0-9]/g,"").slice(0,8)||"utm";
+var r=d.referrer;if(!r)return "dir";var h=new URL(r).hostname;if(h===location.hostname)return "int";
+var m=[["pinterest","pin"],["tiktok","tt"],["google","g"],["bing","bing"],["youtube","yt"],["instagram","ig"],["facebook","fb"],["duckduckgo","ddg"]];
+for(var i=0;i<m.length;i++)if(h.indexOf(m[i][0])>-1)return m[i][1];return "ref"}catch(e){return "unk"}}
+d.addEventListener("click",function(e){try{var a=e.target&&e.target.closest&&e.target.closest("a[data-tl-out]");if(!a||off())return;
+var g=w.goatcounter;if(!g||typeof g.count!=="function"||!w.tlLoaded)return;var n=(a.getAttribute("data-tl-out")+"~"+src()).slice(0,60);
+g.count({path:n,title:n,event:true,no_session:true})}catch(x){}},true);})();
+</script>
+<script id="runcost-calc">
+(function(){
+var watts=document.getElementById("watts"), hours=document.getElementById("hours"), rate=document.getElementById("rate");
+var ch=document.getElementById("c-hour"), cd=document.getElementById("c-day"), cw=document.getElementById("c-week");
+var note=document.getElementById("preset-note");
+var notes={
+"2000":"Preset: fan heater 2 kW (e.g. Dimplex DXUC2BS, manufacturer listing).",
+"100":"Preset: heated throw ~100 W (Beurer HD 75 datasheet lists 100–110 W).",
+"150":"Preset: electric blanket / warming throw ~150 W (Dreamland Cosy Up / Hygge Days product specs).",
+"200":"Preset: dehumidifier ~200 W (Pro Breeze 12L energy consumption 0.2 kWh on manufacturer page).",
+"300":"Preset: heated airer ~300 W (typical Lakeland Dry:Soon 3-tier manuals). Enter your label wattage if different.",
+"":"Enter the wattage from your appliance label or the manufacturer’s specification."
+};
+function money(pence){
+  if(!isFinite(pence)||pence<0) return "—";
+  var pounds=pence/100;
+  if(pounds<0.01 && pence>0) return "< £0.01 ("+pence.toFixed(2)+"p)";
+  if(pounds<1) return "£"+pounds.toFixed(2)+" ("+pence.toFixed(1)+"p)";
+  return "£"+pounds.toFixed(2);
+}
+function calc(){
+  var w=parseFloat(watts.value), h=parseFloat(hours.value), r=parseFloat(rate.value);
+  if(!isFinite(w)||w<=0||!isFinite(h)||h<0||!isFinite(r)||r<=0){ch.textContent=cd.textContent=cw.textContent="—";return;}
+  var pHour=(w/1000)*r;
+  ch.textContent=money(pHour);
+  cd.textContent=money(pHour*h);
+  cw.textContent=money(pHour*h*7);
+}
+function setPressed(btn){
+  document.querySelectorAll(".presets button").forEach(function(b){b.setAttribute("aria-pressed", b===btn?"true":"false");});
+}
+document.querySelectorAll(".presets button").forEach(function(btn){
+  btn.addEventListener("click",function(){
+    var w=btn.getAttribute("data-w"), h=btn.getAttribute("data-h");
+    if(w){watts.value=w;} else {watts.focus();}
+    if(h) hours.value=h;
+    note.textContent=notes.hasOwnProperty(w)?notes[w]:notes[""];
+    setPressed(btn);
+    calc();
+  });
+});
+["input","change"].forEach(function(ev){
+  watts.addEventListener(ev,calc); hours.addEventListener(ev,calc); rate.addEventListener(ev,calc);
+});
+// default pressed: heated throw
+var def=document.querySelector('.presets button[data-w="100"]');
+if(def) setPressed(def);
+calc();
+})();
+</script>
+</body>
+</html>
